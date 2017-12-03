@@ -13,6 +13,7 @@ end
 
 post '/jsond' do
 	HTTParty.delete("http://ci-slave1.virtapi.org:9494/json")
+  redirect '/'
 end
 
 get '/' do
